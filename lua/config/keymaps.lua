@@ -17,3 +17,5 @@ vim.keymap.set("n", "<leader>y", '"+Y', { desc = "Save to pc-clipboard" })
 
 vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
+-- vim.keymap.set("n", "<leader>n", "m`o<Esc>``", { desc = "Adds a blank line below" })
+-- vim.keymap.set("n", "<leader>N", "m`O<Esc>``", { desc = "Adds a blank line before" })
