@@ -8,6 +8,7 @@ return {
       vim.cmd.colorscheme("moonfly")
     end,
   },
+
   -- {
   --   "rebelot/kanagawa.nvim",
   --   name = "kanagawa",
@@ -17,6 +18,7 @@ return {
   --     vim.cmd("colorscheme kanagawa")
   --   end,
   -- },
+
   -- {
   --   "folke/tokyonight.nvim",
   --   lazy = false,
