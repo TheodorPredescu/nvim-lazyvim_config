@@ -18,7 +18,19 @@ return {
     },
   },
   keys = {
-    { "<leader>fo", "<cmd>Oil<CR>", desc = "Open Oil file manager" },
+    -- { "<leader>fo", "<cmd>Oil<CR>", desc = "Open Oil file manager" },
+
+    {
+      "<leader>fo",
+      function()
+        -- Change to the directory of the current file
+        local dir = vim.fn.expand("%:p:h")
+        vim.cmd("cd " .. dir)
+        -- Open Oil with no argument -> full UI mode
+        require("oil").open()
+      end,
+      desc = "Open Oil in file's directory (full UI)",
+    },
   },
   dependencies = {
     "nvim-tree/nvim-web-devicons", -- optional icons
