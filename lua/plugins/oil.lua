@@ -15,6 +15,7 @@ return {
       ["<BS>"] = "actions.parent",
       ["q"] = "actions.close",
       ["<C-h>"] = "actions.toggle_hidden", -- optional: toggle hidden files
+      ["a"] = "actions.create",
     },
   },
   keys = {
@@ -29,7 +30,7 @@ return {
         -- Open Oil with no argument -> full UI mode
         require("oil").open()
       end,
-      desc = "Open Oil in file's directory (full UI)",
+      desc = "Open Oil in file's directory",
     },
   },
   dependencies = {
